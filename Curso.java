@@ -5,7 +5,7 @@ public class Curso {
 	
 	
 	
-	public void ejecutar() {
+	public Asignaturas[] ejecutar() {
 		
 		Asignaturas[] asignaturas = new Asignaturas[8];
 		
@@ -41,10 +41,11 @@ public class Curso {
 	}
 		
 		protected void comenzarCurso(Asignaturas[] asignaturas) {
+			System.out.println("Presentacion de Alumnos: ");
 			
-			presentarAsignaturas(asignaturas);
-			//presentarProfesores(profesores);
-			//presentarAlumnos(alumnos);
+			for (Alumno alumno : alumnos) {
+				System.out.println("Me llamo "+alumno.getNombre()+", mi apellido es "+ alumno.getApellidos()+" y tengo "+alumno.getEdad()+" años.");
+			}
 			
 		}
 		
