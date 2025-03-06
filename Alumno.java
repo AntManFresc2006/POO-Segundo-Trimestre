@@ -1,60 +1,62 @@
-package POO;
+package POO_Ejercicios2;
 
-public class Alumno extends Persona {
-
-   // Constructores
-public Alumno () {
+public class Alumno {
 	
-}
-
-
-public Alumno (String n, String a, int e) {
-	nombre = n;
-	apellidos = a;
-	edad = e;
+	private String nombre, apellidos;
+	private int edad;
+	private boolean haPagado;
+	private Aula aula;
 	
-}
+	public Alumno() {}
 
+	public Alumno(String nombre, String apellidos, int edad, boolean haPagado, Aula aula) {
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.edad = edad;
+		this.haPagado = haPagado;
+		this.aula = aula;
+	}
 
-//Setters y Getters
+	public String getNombre() {
+		return nombre;
+	}
 
-public void setNombre(String nombre) {
-	this.nombre=nombre;
-}
-public String getNombre() {
-	return nombre;
-}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 
+	public String getApellidos() {
+		return apellidos;
+	}
 
-   public String getPrimerApellido() {
-	return apellidos;
-}
-public void setPrimerApellido(String primerApellido) {
-	this.apellidos = primerApellido;
-}
-public int getEdad() {
-	return edad;
-}
-public void setEdad(int edad) {
-	this.edad = edad;
-}
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
 
-//Metodos
-public boolean esMayorEdad() {
-	return edad >= 18;
-}
+	public int getEdad() {
+		return edad;
+	}
 
-protected Alumno[] altaAlumnos() {
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public boolean isHaPagado() {
+		return haPagado;
+	}
+
+	public void setHaPagado(boolean haPagado) {
+		this.haPagado = haPagado;
+	}
+
+	public Aula getAula() {
+		return aula;
+	}
+
+	public void setAula(Aula aula) {
+		this.aula = aula;
+	}
 	
-	Alumno[] alumnos = new Alumno[5];
-	alumnos[0] = new Alumno("Antonio", "Fresco", 18);
-	alumnos[1] = new Alumno("Ivan", "Zamora", 18);
-	alumnos[2] = new Alumno("Samuel", "Jimenez", 18);
-	alumnos[3] = new Alumno("Miguel", "Sanchez", 18);
-	alumnos[4] = new Alumno("Angela", "Vidosa", 18);
 	
-	return alumnos;
-}
-
-
+	
 }
