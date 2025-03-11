@@ -1,6 +1,8 @@
-package POO_Ejercicios2;
+package POO_Ejercicios3;
 
 public class Aula {
+	
+	
 	private int numAlumnos;
 	private String nombre;
 	
@@ -26,7 +28,6 @@ public class Aula {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	
 	
 	
 	
