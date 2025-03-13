@@ -1,63 +1,33 @@
-package POO_Ejercicio1;
+package POO_Interfaces;
 
-public class Coche {
+public class Coche implements Vehiculo{
+	private int cilindrada;
 	
-	//Creamos los atributos de la clase coche
+	public Coche() {}
 
-	
-	private String fabricante, modelo;
-	private int añoFabricacion;
-	private boolean esDeGasolina;
-	
-	//Creamos los constructores sin y con parametros
-
-	
-	public Coche () {}
-
-	public Coche(String fabricante, String modelo, int añoFabricacion, boolean esDeGasolina) {
-
-		this.fabricante = fabricante;
-		this.modelo = modelo;
-		this.añoFabricacion = añoFabricacion;
-		this.esDeGasolina = esDeGasolina;
-	}
-	
-	
-	//Y por ultimo los setters y getters de cada atributos de nuestra clase Pelicula
-
-	public String getFabricante() {
-		return fabricante;
+	public Coche(int cilindrada) {
+		this.cilindrada = cilindrada;
 	}
 
-	public void setFabricante(String fabricante) {
-		this.fabricante = fabricante;
+	public int getCilindrada() {
+		return cilindrada;
 	}
 
-	public String getModelo() {
-		return modelo;
+	public void setCilindrada(int cilindrada) {
+		this.cilindrada = cilindrada;
 	}
 
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
+	@Override
+	public void arrancar() {
+		
+		System.out.println("Arranca el coche");
 	}
 
-	public int getAñoFabricacion() {
-		return añoFabricacion;
+	@Override
+	public void detener() {
+		System.out.println("Se detiene el coche");
+		
 	}
-
-	public void setAñoFabricacion(int añoFabricacion) {
-		this.añoFabricacion = añoFabricacion;
-	}
-
-	public boolean isEsDeGasolina() {
-		return esDeGasolina;
-	}
-
-	public void setEsDeGasolina(boolean esDeGasolina) {
-		this.esDeGasolina = esDeGasolina;
-	}
-	
-
 	
 	
 }

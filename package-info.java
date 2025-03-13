@@ -1,1 +1,1 @@
-package POO_Ejercicios3;
+package POO_Interfaces;

@@ -46,6 +46,8 @@ public class TestHerencia {
 		Aula aula = new Aula(27, "Plastica");
 		Alumno alumno = new Alumno("Antonio Manuel", "Fresco", "Gomez", "817236736k", "Sevilla", "+34 867 12 92 83", 18, true, aula);
 		
+		alumno.saludar();
+		alumno.verificarPago();
 		
 		
 	}

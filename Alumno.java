@@ -1,6 +1,6 @@
 package POO_Ejercicios3;
 
-import POO_Ejercicios2.Aula;
+import POO_Ejercicios3.Aula;
 
 public class Alumno extends Persona{
 	private int edad;
