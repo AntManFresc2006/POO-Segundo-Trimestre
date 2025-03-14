@@ -1,7 +1,9 @@
 package POO_Interfaces;
 
-public class Imprimible {
-	public static void main(String[] args) {
-
-	}
+public interface Imprimible {
+	
+	public void imprimir();
+	
+	public void mostrarDatos();
+	
 }
