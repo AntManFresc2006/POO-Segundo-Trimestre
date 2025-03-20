@@ -1,1 +1,1 @@
-package POO_Interfaces;
+package ej1Practicas;
