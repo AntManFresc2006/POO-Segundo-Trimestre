@@ -1,87 +1,109 @@
-package POO_Ejercicios3;
+package Ej3Practicas;
 
 public class Persona {
 	
-	//Creamos los atributos de la clase Persona
+	//Creamos nuestros atributos de la clase Persona.
 	
-	protected String nombre, apellido, apellido2, dni, domicilio, telefono;
+	private String id, nombre, apellidos, domicilio, telefono;
 	
+	// Aqui creamos los constructores vacios y con parametros
 	
-	//Creamos los constructores sin y con parametros
-	
-	
-	public Persona () {}
+	public Persona() {}
 
-	public Persona(String nombre, String apellido, String apellido2, String dni, String domicilio, String telefono) {
-		super();
+	
+	public Persona(String id, String nombre, String apellidos, String domicilio, String telefono) {
+		this.id = id;
 		this.nombre = nombre;
-		this.apellido = apellido;
-		this.apellido2 = apellido2;
-		this.dni = dni;
+		this.apellidos = apellidos;
 		this.domicilio = domicilio;
 		this.telefono = telefono;
 	}
 
-	//Y por ultimo los setters y getters de cada atributos de nuestra clase Persona
 	
+	//Aqui los setters y getters
+
+	/**
+	 * @return the id
+	 */
+	public String getId() {
+		return id;
+	}
+
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(String id) {
+		this.id = id;
+	}
+
+
+	/**
+	 * @return the nombre
+	 */
 	public String getNombre() {
 		return nombre;
 	}
 
+
+	/**
+	 * @param nombre the nombre to set
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	public String getApellido() {
-		return apellido;
+
+	/**
+	 * @return the apellidos
+	 */
+	public String getApellidos() {
+		return apellidos;
 	}
 
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+
+	/**
+	 * @param apellidos the apellidos to set
+	 */
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
 	}
 
-	public String getApellido2() {
-		return apellido2;
-	}
 
-	public void setApellido2(String apellido2) {
-		this.apellido2 = apellido2;
-	}
-
-	public String getDni() {
-		return dni;
-	}
-
-	public void setDni(String dni) {
-		this.dni = dni;
-	}
-
+	/**
+	 * @return the domicilio
+	 */
 	public String getDomicilio() {
 		return domicilio;
 	}
 
+
+	/**
+	 * @param domicilio the domicilio to set
+	 */
 	public void setDomicilio(String domicilio) {
 		this.domicilio = domicilio;
 	}
 
+
+	/**
+	 * @return the telefono
+	 */
 	public String getTelefono() {
 		return telefono;
 	}
 
+
+	/**
+	 * @param telefono the telefono to set
+	 */
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 	
-	public void saludar() {
-		System.out.println("Hola, mi nombre es "+nombre+" "+apellido+" "+apellido2+".");
-	}
 	
-	public void mostrarInfo() {
-		System.out.println("Nombre = "+nombre);
-		System.out.println("Apellidos = "+apellido+" "+apellido2);
-		System.out.println("Domicilio = "+domicilio);
 
-	}
 	
+
 	
 }
