@@ -1,4 +1,4 @@
-package CajaNegra;
+package Cajanegra;
 
 public class Producto {
 	 private double precio;
@@ -18,7 +18,8 @@ public class Producto {
 	 }
 	 }
 	 // Método para establecer el IVA
-	public void setIVA(int iva) {
+	
+	 public void setIVA(int iva) {
 	 this.iva = iva;
 	 }
 	 // Método para establecer el precio
@@ -33,4 +34,6 @@ public class Producto {
 	 public double getPrecio() {
 	 return precio;
 	 }
-	}
+	 
+	 
+}
